@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(22, 25, 27);
+  color: rgb(212, 212, 212);
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.container {
+  padding: 30px;
+  background-color: #303538;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #00000011;
+  width: 90%;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.result {
+  background-color: rgb(220, 233, 243);
+  position: relative;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.result #result {
+  width: 85%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.result .clipboard {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  background-color: slategray;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result .clipboard.active{
+  background-color: royalblue;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  padding: 10px 0;
+}
+
+.checkboxes div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 20px;
+}
+
+.checkbox-field input {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-field input:checked {
+  accent-color: royalblue;
+}
+
+.slider {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 50px;
+}
+
+.slider .rangeValue {
+  background-color: white;
+  width: 60px;
+  height: 100%;
+  font-size: 22px;
+  border-radius: 5px;
+  color: black;
+  line-height: 50px;
+  text-align: center;
+}
+
+.slider .range {
+  width: calc(100% - 80px);
+  height: 100%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .range input {
+  width: 100%;
+}
+
+.button {
+  padding: 20px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: royalblue;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.errorMessage {
+  text-align: center;
+  color: red;
+  padding-bottom: 20px;
+}
+
+
+
+
